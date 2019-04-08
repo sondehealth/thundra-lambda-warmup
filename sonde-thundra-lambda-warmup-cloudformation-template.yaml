@@ -136,7 +136,7 @@ Resources:
       Role: !GetAtt [ ThundraLambdaWarmupExecutionRole, Arn ]
       Code:
         S3Bucket: "sonde-release-artifacts"
-        S3Key: "thundra-lambda-warmup/thundra-lambda-warmup-1.0.0.jar"      
+        S3Key: "release/thundra-lambda-warmup/1.0.0"      
       Runtime: java8
       Timeout:
         Ref: TimeoutParameter
