@@ -134,9 +134,7 @@ Resources:
       Handler: "io.thundra.lambda.warmup.WarmupHandler"
       Description: "Thundra Lambda Warmup"
       Role: !GetAtt [ ThundraLambdaWarmupExecutionRole, Arn ]
-      Code:
-        S3Bucket: "sonde-release-artifacts"
-        S3Key: "release/thundra-lambda-warmup/1.0.0"      
+      Code: ./target/thundra-lambda-warmup-1.0.0.jar
       Runtime: java8
       Timeout:
         Ref: TimeoutParameter
